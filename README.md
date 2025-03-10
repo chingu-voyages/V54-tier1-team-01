@@ -39,6 +39,6 @@ coding!
 
 ### Developers:
 - evaristoc (developer / po): [GitHub](https://github.com/evaristoc)
-- VarshUI (lead developer)
+- VarshUI (developer)
 - danR0gers (developer): [GitHub](https://github.com/Drogers1999)
 - Nadiia (developer): [GitHub](https://github.com/NadiiaLashtun)
