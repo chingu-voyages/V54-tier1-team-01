@@ -34,8 +34,11 @@ Everyone on your team should add their name along with a link to their GitHub
 your repo access and to practice PR'ing with your team *before* you start
 coding!
 
-- Teammate name #1: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+### Scrum Master:
+- Moshood (scrum master): [GitHub](https://github.com/ghaccountname) and or linkedin
 
-   ...
-- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+### Developers:
+- evaristoc (developer / po): [GitHub](https://github.com/evaristoc)
+- VarshUI (lead developer)
+- danR0gers (developer): [GitHub](https://github.com/Drogers1999)
+- Nadiia (developer): [GitHub](https://github.com/NadiiaLashtun)
