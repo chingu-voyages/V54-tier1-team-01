@@ -1,3 +1,5 @@
+
+
 # voyage-tasks
 
 Your project's `readme` is as important to success as your code. For 
@@ -20,25 +22,15 @@ You may find these helpful as you work together to organize your project.
 - [Team Project Ideas](./docs/team_project_ideas.md)
 - [Team Decision Log](./docs/team_decision_log.md)
 
-Meeting Agenda templates (located in the `/docs` directory in this repo):
 
-- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
-- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
-- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
-- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
 
 ## Our Team
-
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team *before* you start
-coding!
 
 ### Scrum Master:
 - Moshood (scrum master): [GitHub](https://github.com/ghaccountname) and or linkedin
 
 ### Developers:
 - evaristoc (developer / po): [GitHub](https://github.com/evaristoc)
-- VarshUI (developer)
+- VarshUI (developer) : [GitHub](https://github.com/VarshUI)
 - danR0gers (developer): [GitHub](https://github.com/Drogers1999)
 - Nadiia (developer): [GitHub](https://github.com/NadiiaLashtun)
