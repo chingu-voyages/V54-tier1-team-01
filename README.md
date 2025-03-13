@@ -29,9 +29,9 @@ Our Product Vision is...
 
 ### MVP 01:
 
-Wireframes:
-https://app.mockflow.com/view/M0T2bLIwKrb
-https://app.mockflow.com/view/Mk9OLNw7Krb
+Proposed wireframes:
+* https://app.mockflow.com/view/M0T2bLIwKrb
+* https://app.mockflow.com/view/Mk9OLNw7Krb
 
 Keeping in mind the following draft component structure (version 01):
 ```
