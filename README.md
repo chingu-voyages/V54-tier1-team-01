@@ -1,26 +1,61 @@
 
 
-# voyage-tasks
+# Our App
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+Our Product Vision is... 
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+**Empowering Users to Master AI Prompts.** 
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+#### Our Vision:
 
-> Own it & Make it your Own!
+> To empower users of all skill levels to confidently create effective AI prompts by providing a structured, interactive, and educational web application that enhances their ability to generate accurate, efficient, and impactful results from AI models.
+
+
+#### Key Objectives:
+
+✅Provide a step-by-step methodology for building clear and effective AI prompts.
+✅ Offer real-time feedback and suggestions to help users refine their prompts.
+✅ Enable users to track their learning progress and understand best practices.
+
+
+#### Core Benefits:
+
+    Improved Prompt Quality: Users will develop stronger AI prompts that yield better results.
+    Learning by Doing: Through hands-on guidance, users will build prompt skills that improve over time.
+    AI Confidence: Users will gain deeper insights into how AI models respond to different prompt structures.
+
 
 ## Team Documents
 
-You may find these helpful as you work together to organize your project.
+### MVP 01:
 
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
+Wireframes:
+https://app.mockflow.com/view/M0T2bLIwKrb
+https://app.mockflow.com/view/Mk9OLNw7Krb
+
+Keeping in mind the following draft component structure (version 01):
+/src
+│── components
+│ │── Header.jsx
+│ │ │── Logo.jsx
+│ │ │── Nav.jsx
+│ │── Section01.jsx (Form Input)
+│ │ │── HeaderSection.jsx
+│ │ │── Form.jsx
+│ │ │── InputArea.jsx
+│ │ │── SubmitButton.jsx
+│ │── Section02.jsx (API Response)
+│ │ │── ResponseDisplay.jsx
+│ │── Footer.jsx
+│── App.jsx
+│── index.js
+│── styles.css
+
+### MVP 02 -- if enough time --
+
+There is a proposal for a different layout, so this component might be affected / modified:
+
+![Image](https://github.com/user-attachments/assets/db21fad6-9539-4ff0-ab6d-0a9db0e4fae0)
 
 
 
