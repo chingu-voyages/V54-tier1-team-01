@@ -28,6 +28,7 @@ https://app.mockflow.com/view/M0T2bLIwKrb
 https://app.mockflow.com/view/Mk9OLNw7Krb
 
 Keep in mind the following component structure (version 01):
+```
 /src
 │── components
 │   │── Header.jsx
@@ -44,7 +45,7 @@ Keep in mind the following component structure (version 01):
 │── App.jsx
 │── index.js
 │── styles.css
-
+```
 
 ### Possible improvements to MVP if enough time:
 
