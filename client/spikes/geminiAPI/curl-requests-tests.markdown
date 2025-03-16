@@ -28,6 +28,10 @@ Best unicode (hex) decoder for the response in HTML: https://magictool.ai/tool/u
 
 https://ai.google.dev/gemini-api/docs/quickstart
 
+### API Key Security
+
+https://www.youtube.com/watch?v=Od7YwGqBik8&t
+
 ### References and Learning Resources
 
 https://github.com/chingu-voyages/V54-tier1-team-01/issues/16
