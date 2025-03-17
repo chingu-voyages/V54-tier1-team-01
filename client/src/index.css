@@ -68,6 +68,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
+
 /* This section is for the nav bar */
 .nav-bar {
   display: flex;
@@ -95,3 +97,4 @@ button:focus-visible {
   text-decoration: none;
   color: white;
 }
+
