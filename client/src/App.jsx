@@ -1,54 +1,37 @@
 import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 import "./App.css";
 import InputAreaBlock from "./components/InputAreaBlock";
 
 function App() {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [apiData, setApiData] = useState(null);
-
-  const handleOptionClick = async (option) => {
-    setSelectedOption(option);
-    setLoading(true);
-
-    // Mocked async API call
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate delay
-      setApiData(`Data for option: ${option}`);
-      setLoading(false);
-    } catch (error) {
-      console.error("API call failed:", error);
-      setLoading(false);
-      setApiData("Error fetching data.");
-    }
-  };
-
-  const handleBackClick = () => {
-    setSelectedOption(null);
-    setApiData(null);
-  };
-
-  if (selectedOption && apiData) {
-    return (
-      <div>
-        <p>{apiData}</p>
-        <InputAreaBlock />
-        <button onClick={handleBackClick}>Back</button>
-      </div>
-    );
-  }
+  const [count, setCount] = useState(0);
 
   return (
-    <div>
-      {loading && <p>Loading...</p>}
-      {!loading && !selectedOption && (
-        <div>
-          <button onClick={() => handleOptionClick('Scenario for prompting Personas')}>Practice making Personas</button>
-          <button onClick={() => handleOptionClick('Scenario for prompting Context')}>Practice Making Contexts</button>
-          <button onClick={() => handleOptionClick('Scenario for prompting Tasks')}>Practice Making Tasks</button>
-        </div>
-      )}
-    </div>
+    <>
+      <InputAreaBlock />
+      <div>
+        <h1 class='text-3xl font-bold underline'>Hello world!</h1>
+        <a href='https://vite.dev' target='_blank'>
+          <img src={viteLogo} className='logo' alt='Vite logo' />
+        </a>
+        <a href='https://react.dev' target='_blank'>
+          <img src={reactLogo} className='logo react' alt='React logo' />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className='card'>
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className='read-the-docs'>
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   );
 }
 
