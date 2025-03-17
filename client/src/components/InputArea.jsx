@@ -2,7 +2,7 @@
 export default function InputArea() {
   return (
     <textarea
-      className='w-2/3 h-32 p-2 border rounded'
+      className='w-full h-24 p-2 border rounded'
       placeholder='Enter text...'
     />
   );
