@@ -1,71 +1,41 @@
+# voyage-tasks
 
+Your project's `readme` is as important to success as your code. For 
+this reason you should put as much care into its creation and maintenance
+as you would any other component of the application.
 
-# Our App
+If you are unsure of what should go into the `readme` let this article,
+written by an experienced Chingu, be your starting point - 
+[Keys to a well written README](https://tinyurl.com/yk3wubft).
 
-Our Product Vision is... 
+And before we go there's "one more thing"! Once you decide what to include
+in your `readme` feel free to replace the text we've provided here.
 
-**Empowering Users to Master AI Prompts.** 
-
-#### Our Vision:
-
-> To empower users of all skill levels to confidently create effective AI prompts by providing a structured, interactive, and educational web application that enhances their ability to generate accurate, efficient, and impactful results from AI models.
-
-
-#### Key Objectives:
-
-* ✅ Provide a step-by-step methodology for building clear and effective AI prompts.
-* ✅ Offer real-time feedback and suggestions to help users refine their prompts.
-* ✅ Enable users to track their learning progress and understand best practices.
-
-
-#### Core Benefits:
-
-*  Improved Prompt Quality: Users will develop stronger AI prompts that yield better results.
-*  Learning by Doing: Through hands-on guidance, users will build prompt skills that improve over time.
-*  AI Confidence: Users will gain deeper insights into how AI models respond to different prompt structures.
-
+> Own it & Make it your Own!
 
 ## Team Documents
 
-### MVP 01:
+You may find these helpful as you work together to organize your project.
 
-Proposed wireframes:
-* https://app.mockflow.com/view/M0T2bLIwKrb
-* https://app.mockflow.com/view/Mk9OLNw7Krb
+- [Team Project Ideas](./docs/team_project_ideas.md)
+- [Team Decision Log](./docs/team_decision_log.md)
 
-Keeping in mind the following draft component structure (version 01):
-```
-/src
-│── components
-│ │── Header.jsx
-│ │ │── Logo.jsx
-│ │ │── Nav.jsx
-│ │── Section01.jsx (Form Input)
-│ │ │── HeaderSection.jsx
-│ │ │── Form.jsx
-│ │ │── InputArea.jsx
-│ │ │── SubmitButton.jsx
-│ │── Section02.jsx (API Response)
-│ │ │── ResponseDisplay.jsx
-│ │── Footer.jsx
-│── App.jsx
-│── index.js
-│── styles.css
-```
-### MVP 02 -- if enough time --
+Meeting Agenda templates (located in the `/docs` directory in this repo):
 
-There is a proposal for a different layout that might requires further work so it is left as wish for now:
-
-![Image](https://github.com/user-attachments/assets/db21fad6-9539-4ff0-ab6d-0a9db0e4fae0)
-
+- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
+- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
+- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
+- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
 
 ## Our Team
 
-### Scrum Master:
-- Moshood (scrum master): [GitHub](https://github.com/ghaccountname) and or linkedin
+Everyone on your team should add their name along with a link to their GitHub
+& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
+your repo access and to practice PR'ing with your team *before* you start
+coding!
 
-### Developers:
-- evaristoc (developer / po): [GitHub](https://github.com/evaristoc)
-- VarshUI (developer) : [GitHub](https://github.com/VarshUI)
-- danR0gers (developer): [GitHub](https://github.com/Drogers1999)
-- Nadiia (developer): [GitHub](https://github.com/NadiiaLashtun)
+- Teammate name #1: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+
+   ...
+- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
