@@ -1,3 +1,7 @@
+## Prompt Engineering
+
+https://scrimba.com/intro-to-ai-engineering-c032
+
 ## Gemini
 
 ### Gemini Studio
@@ -31,6 +35,7 @@ https://ai.google.dev/gemini-api/docs/quickstart
 ### API Key Security
 
 https://www.youtube.com/watch?v=Od7YwGqBik8&t
+https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apikey-to-the-public
 
 ### References and Learning Resources
 
