@@ -29,11 +29,17 @@ Our Product Vision is...
 
 ### MVP 01:
 
-Proposed wireframes:
+#### current layout and functionality:
+
+![layout, update 15/03/25, combined opinions by Nadiia, Evaristo, Dan, looking at requirements](https://github.com/user-attachments/assets/2b4e764c-e0a8-4af1-a65e-29e24e16ebcb)
+
+![functionality, Spring 2, Evaristo ](https://github.com/user-attachments/assets/3dce34f4-bd82-4e04-b5f0-29fdf3befa12)
+
+#### Other proposed wireframes:
 * https://app.mockflow.com/view/M0T2bLIwKrb
 * https://app.mockflow.com/view/Mk9OLNw7Krb
 
-Keeping in mind the following draft component structure (version 01):
+#### Keeping in mind the following draft component structure (version 01):
 ```
 /src
 │── components
@@ -62,7 +68,7 @@ There is a proposal for a different layout that might requires further work so i
 ## Our Team
 
 ### Scrum Master:
-- Moshood (scrum master): [GitHub](https://github.com/ghaccountname) and or linkedin
+- Moshood (scrum master): GitHub and or linkedin (still not available)
 
 ### Developers:
 - evaristoc (developer / po): [GitHub](https://github.com/evaristoc)
