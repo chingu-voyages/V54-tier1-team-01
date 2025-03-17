@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -68,3 +68,33 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
+
+/* This section is for the nav bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+
+}
+
+.nav-bar li {
+  margin: 0 10px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
