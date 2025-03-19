@@ -69,6 +69,14 @@ button:focus-visible {
   }
 }
 */
+/* Scenario */
+.scenario {
+  color: red;
+}
+
+.geminiScenario{
+  color:green;
+}
 
 /* This section is for the nav bar */
 .nav-bar {
