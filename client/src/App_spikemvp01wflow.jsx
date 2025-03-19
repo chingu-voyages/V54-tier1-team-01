@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import HeaderComponent from "./components/Header";
-import ScenarioComponent from "./components/Scenario";
+import ScenarioComponent from "./components/ScenarioSection";
 import InputSection from "./components/InputSection";
-import printFecthedScenario from "./js/apis/api";
+import {printFecthedScenario} from "./js/apis/api";
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         :
         <>
           <ScenarioComponent scene={scene}/>
-          <InputSection />
+          <InputSection scene={scene}/>
         </>
       }
     </>
