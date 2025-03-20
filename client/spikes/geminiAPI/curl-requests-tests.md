@@ -41,6 +41,8 @@ https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apike
 
 https://github.com/chingu-voyages/V54-tier1-team-01/issues/16
 
+https://googleapis.github.io/js-genai/
+
 https://www.youtube.com/watch?v=nCEsIbfoLJM
 
 ## Additional Considerations

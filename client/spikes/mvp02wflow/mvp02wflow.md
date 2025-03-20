@@ -2,10 +2,11 @@
 
 ## References
 
-### working with promises (in React)
+### working with promises / asyncs (in React)
 
 * https://dev.to/nicozerpa/i-m-using-async-await-why-does-my-function-return-a-promise-hh9
 * https://dev.to/paperbyte/async-await-vs-fetchthen-20oe
+* https://www.reddit.com/r/reactjs/comments/t8iipv/invoking_async_function_inside_useeffect/?rdt=42444 (!!!!)
 
 ### working with api and fetch / axios (in React)
 
@@ -19,3 +20,14 @@
 ### working with forms (in React)
 
 * https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable
+
+### promises / asyncs patterns in useEffect
+
+* https://medium.com/@deniswachira_/how-to-asynchronously-call-apis-inside-the-useeffect-hook-ce524431ce6
+* https://stackoverflow.com/questions/63398305/async-await-is-not-waiting-for-response-inside-useeffect/63398567
+* 
+
+### adding Gemini + rendering Gemini content (markdown)
+
+* https://medium.com/@codewithadurintiashok/integration-of-gemini-ai-in-react-8872025088de
+* https://dev.to/tahrim_bilal/how-to-integrate-gemini-api-with-reactjs-a-step-by-step-guide-341b
