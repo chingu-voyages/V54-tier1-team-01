@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
+<<<<<<< HEAD
     "firebase": "^11.5.0",
+=======
+>>>>>>> 5b6204b (spike:mpvwflows: full gemini workflow with scenario generation and assessment of promots)
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0"
