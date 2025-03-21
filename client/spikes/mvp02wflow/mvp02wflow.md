@@ -2,6 +2,18 @@
 
 ## References
 
+### state sharing in React: some best practices
+
+* https://tigerabrodi.blog/is-it-ok-to-pass-setstate-as-a-prop-in-react
+* https://stackademic.com/blog/dont-pass-setstate-as-a-prop-2cc2b187d323
+* https://react.dev/learn/sharing-state-between-components
+* https://www.pluralsight.com/resources/blog/guides/passing-state-of-parent-to-child-component-as-props
+* https://dev.to/bcostaaa01/how-to-pass-props-from-child-to-parent-component-in-react-1ci4
+* https://www.bomberbot.com/react/mastering-state-management-in-react-how-to-change-the-state-of-a-child-component-from-its-parent/
+* https://www.developerway.com/posts/react-elements-children-parents
+* https://medium.com/@marazzo94/lifting-state-up-in-react-sharing-data-between-parent-and-child-componentsintroduction-54d43342c944
+
+
 ### working with promises / asyncs (in React)
 
 * https://dev.to/nicozerpa/i-m-using-async-await-why-does-my-function-return-a-promise-hh9
