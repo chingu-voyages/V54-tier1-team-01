@@ -1,13 +1,14 @@
 import "./App.css";
-import InputSection from "./components/InputSection";
 import HeaderComponent from "./components/Header";
+import MainComponent from "./components/Main";
 
 function App() {
   return (
     <>
       <HeaderComponent />
-      <InputSection />
+      <MainComponent />
     </>
+
   );
 }
 
