@@ -22,7 +22,8 @@ export default function InputSection(props) {
   const handleSubmit = (event) => {
 =======
 import ResultBlock from "./ResultBlock";
-import generateGeminiContent from "../js/apis/api";
+import PROMPTS from "../data/geminiPromptDescriptions";
+import responseGemini from "../js/apis/api";
 
 /*Section 1*/
 
@@ -30,10 +31,9 @@ export default function InputSection(props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   let [assessment, setAssessment] = useState(null);
-  let forAssessmentPrompt = `
-  You have been previously asked to formulate the following task and scenario for a student: ${props.scene}.
-  Now it is time to evaluate the prompts made by the student. Provide a concise evaluation in markdown format of no more than 3 sentences per component of the Pentagram prompt framework given by the student:
-  `
+  const stateSetters = {setValue:setAssessment, setError:setError, setLoading:setLoading};
+  
+  let forAssessmentPrompt = PROMPTS.onSubmissionPrompt(props.scene); 
 
 function handleSubmit(event) {
     // Prevent the browser from reloading the page
@@ -59,6 +59,7 @@ function handleSubmit(event) {
     forAssessmentPrompt = forAssessmentPrompt+ +' Task: '+formJson['Task']+'.\n';
     forAssessmentPrompt = forAssessmentPrompt+ +' Output: '+formJson['Output']+'.\n';
     forAssessmentPrompt = forAssessmentPrompt+ +' Constraints: '+formJson['Constraints']+'.\n';
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     // make request to Gemini and set the states
@@ -89,6 +90,12 @@ function handleSubmit(event) {
     //   //printFetchedAssessment(props.scene);
     // }
 >>>>>>> 5b6204b (spike:mpvwflows: full gemini workflow with scenario generation and assessment of promots)
+=======
+
+    console.log(forAssessmentPrompt)
+    responseGemini(forAssessmentPrompt, stateSetters);
+
+>>>>>>> 86cf837 (spike:mvpwflows: improvements to the workflow and structure)
   }
 >>>>>>> 2d5d183 (spike:mvpwflows: general modificaitons to the fomr and sketched implementation of an async call after submission of a prompt)
 
