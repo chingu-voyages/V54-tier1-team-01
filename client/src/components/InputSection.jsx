@@ -1,10 +1,11 @@
+import { useState } from "react";
 import InputAreaBlock from "./InputAreaBlock";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
 import DESCRIPTION from "../data/InputDescriptionInfo";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
 
 /*Section 1*/
-export default function InputSection() {
+export default function InputSection(props) {
   //state setters
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
