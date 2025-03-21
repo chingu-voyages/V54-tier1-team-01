@@ -21,7 +21,7 @@ export default function MainComponent(){
 
     return (
         <>
-          <InputSection />
+          <InputSection scene={scene} />
         </>
       );
 }
