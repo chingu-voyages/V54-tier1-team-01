@@ -6,7 +6,7 @@ export default function InputArea({ id, fieldName, fieldText }) {
         className='flex-1/4 text-md md:text-xl text-left font-bold'
         htmlFor={id}
       >
-        {fieldName}
+        {fieldName}:
       </label>
       <textarea
         className='w-full h-24 p-2 border rounded'
