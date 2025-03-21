@@ -1,17 +1,18 @@
 /* Field for entering a request */
-export default function InputArea({ lab, text }) {
+export default function InputArea({ id, fieldName, fieldText }) {
   return (
     <>
       <label
         className='flex-1/4 text-md md:text-xl text-left font-bold'
-        for='prompt'
+        htmlFor={id}
       >
-        {lab}
+        {fieldName}:
       </label>
       <textarea
         className='w-full h-24 p-2 border rounded'
-        id='prompt'
-        placeholder={text}
+        id={id}
+        placeholder={fieldText}
+        name={fieldName}
       />
     </>
   );
