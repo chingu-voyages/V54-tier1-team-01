@@ -12,6 +12,7 @@ export default function InputArea({ id, fieldName, fieldText }) {
         className='w-full h-24 p-2 border rounded'
         id={id}
         placeholder={fieldText}
+        name={fieldName}
       />
     </>
   );
