@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ScenarioSection from "./ScenarioSection";
 import InputSection from "./InputSection";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
@@ -15,13 +16,24 @@ export default function MainComponent(){
     useEffect(()=>{
         //let initialPrompt = "who painted the Mona Lisa";
     
-        //responseGeminiAndStateSetting(initialPrompt, stateSetters);
+        responseGeminiAndStateSetting(initialPrompt, stateSetters);
       },
       []);
 
     return (
         <>
-          <InputSection scene={scene} />
+          {
+            loading ?
+            <h1>loading...</h1>
+            :
+            error ?
+            <h1>Something went wrong. Please try again later</h1>
+            :
+            <>
+              <ScenarioSection scene={scene}/>
+              <InputSection scene={scene}/>
+            </>
+          }
         </>
       );
 }
