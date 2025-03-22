@@ -22,7 +22,7 @@ export default function InputSection(props) {
   const handleSubmit = (event) => {
 =======
 import ResultBlock from "./ResultBlock";
-import PROMPTS from "../data/geminiPromptDescriptions";
+import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGemini from "../js/apis/api";
 
 /*Section 1*/

@@ -3,7 +3,7 @@ import "./App.css";
 import HeaderComponent from "./components/Header";
 import ScenarioSection from "./components/ScenarioSection";
 import InputSection from "./components/InputSection";
-import PROMPTS from "./data/geminiPromptDescriptions";
+import PROMPTS from "./data/geminiPromptDescriptionInfo";
 import responseGemini from "./js/apis/api";
 
 function App() {
