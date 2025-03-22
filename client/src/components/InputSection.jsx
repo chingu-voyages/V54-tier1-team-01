@@ -22,14 +22,7 @@ function handleSubmit(event) {
     const form = event.currentTarget;
     const formData = new FormData(form);
     const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson);
-    forAssessmentPrompt = forAssessmentPrompt+ +' Persona: '+formJson['Persona']+'.\n';
-    forAssessmentPrompt = forAssessmentPrompt+ +' Context: '+formJson['Context']+'.\n';
-    forAssessmentPrompt = forAssessmentPrompt+ +' Task: '+formJson['Task']+'.\n';
-    forAssessmentPrompt = forAssessmentPrompt+ +' Output: '+formJson['Output']+'.\n';
-    forAssessmentPrompt = forAssessmentPrompt+ +' Constraints: '+formJson['Constraints']+'.\n';
-
-    console.log(forAssessmentPrompt)
+    forAssessmentPrompt = PROMPTS.addPromptComponent(forAssessmentPrompt, ['Persona', 'Context', 'Task', 'Output', 'Constraints'], formJson);
     responseGemini(forAssessmentPrompt, stateSetters);
 
   }
