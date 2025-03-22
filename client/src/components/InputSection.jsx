@@ -1,7 +1,7 @@
 import { useState } from "react";
 import InputAreaBlock from "./InputAreaBlock";
 import ResultBlock from "./ResultBlock";
-import PROMPTS from "../data/geminiPromptDescriptions";
+import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGemini from "../js/apis/api";
 
 /*Section 1*/
