@@ -3,8 +3,8 @@ import "./App.css";
 import HeaderComponent from "./components/Header";
 import ScenarioSection from "./components/ScenarioSection";
 import InputSection from "./components/InputSection";
-import PROMPTS from "./data/geminiPromptDescriptionInfo";
-import responseGemini from "./js/apis/api";
+import PROMPTS from "../data/geminiPromptDescriptionInfo";
+import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,7 +19,7 @@ function App() {
   useEffect(()=>{
     //let initialPrompt = "who painted the Mona Lisa";
 
-    responseGemini(initialPrompt, stateSetters);
+    responseGeminiAndStateSetting(initialPrompt, stateSetters);
   },
   []);
 
