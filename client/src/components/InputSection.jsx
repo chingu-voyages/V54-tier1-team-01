@@ -52,6 +52,7 @@ function handleSubmit(event) {
     //complete prompt with data submitted by user
 =======
     const formJson = Object.fromEntries(formData.entries());
+<<<<<<< HEAD
     console.log(formJson);
 >>>>>>> 5b6204b (spike:mpvwflows: full gemini workflow with scenario generation and assessment of promots)
     forAssessmentPrompt = forAssessmentPrompt+ +' Persona: '+formJson['Persona']+'.\n';
@@ -93,6 +94,9 @@ function handleSubmit(event) {
 =======
 
     console.log(forAssessmentPrompt)
+=======
+    forAssessmentPrompt = PROMPTS.addPromptComponent(forAssessmentPrompt, ['Persona', 'Context', 'Task', 'Output', 'Constraints'], formJson);
+>>>>>>> 89c709c (spike:mvpwflows: making the prompt creation based on functions)
     responseGemini(forAssessmentPrompt, stateSetters);
 
 >>>>>>> 86cf837 (spike:mvpwflows: improvements to the workflow and structure)
