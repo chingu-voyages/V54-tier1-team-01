@@ -43,3 +43,12 @@
 
 * https://medium.com/@codewithadurintiashok/integration-of-gemini-ai-in-react-8872025088de
 * https://dev.to/tahrim_bilal/how-to-integrate-gemini-api-with-reactjs-a-step-by-step-guide-341b
+
+### animation libraries
+
+#### text
+
+* https://blog.logrocket.com/5-ways-implement-typing-animation-react/
+* https://blog.logrocket.com/creating-react-animations-with-motion/
+* https://stackoverflow.com/questions/64337286/how-to-animate-input-field-using-react-spring
+* https://codeforum.org/threads/how-to-animate-input-placeholder-text-shaking-in-react-using-framer-motion.7189/
