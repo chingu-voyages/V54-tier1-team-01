@@ -18,7 +18,9 @@ const PROMPTS = {
       },
       addPromptComponent: (prompt, promptCompList, promptCompSource)=>{
         /* adds input sub prompts to an existing prompt */
-        promptCompList.forEach((v,i) => { `${prompt} ${v}: ${promptCompSource[v]}.\n` });
+        for(let i = 0; i < promptCompList.length; i++){
+          prompt = prompt +' '+ promptCompList[i] + ': ' + promptCompSource[promptCompList[i]] + '.\n'
+        }
         return prompt;
       }
 
