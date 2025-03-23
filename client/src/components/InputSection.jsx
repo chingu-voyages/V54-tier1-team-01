@@ -10,8 +10,9 @@ import PROMPTS from "../data/geminiPromptDescriptionInfo";
 export default function InputSection(props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  let [assessment, setAssessment] = useState(null);
-  const stateSetters = {setValue:setAssessment, setError:setError, setLoading:setLoading};
+  //const [assessment, setAssessment] = useState(null);
+  //const stateSetters = {setValue:setAssessment, setError:setError, setLoading:setLoading};
+  const stateSetters = {setValue:props.setAssessmentFunc, setError:setError, setLoading:setLoading};
   
   let forAssessmentPrompt = PROMPTS.onSubmissionPrompt(props.scene); 
 
@@ -54,7 +55,8 @@ function handleSubmit(event) {
           Submit
         </button>
       </form>
-      <ResultBlock assessment={assessment}/>
+     
     </>
   );
 }
+// <ResultBlock assessment={assessment}/>
