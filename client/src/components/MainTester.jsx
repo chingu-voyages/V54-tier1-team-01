@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Stepper } from 'react-form-stepper';
+import { Stepper, Step } from 'react-form-stepper';
 import ScenarioSection from "./ScenarioSection";
 import InputSection from "./InputSection";
 import ResultSection from "./ResultSection";
@@ -13,7 +13,7 @@ export default function MainTesterComponent(){
     const [scene, setScene] = useState(null);
     const [assessment, setAssessment] = useState(null);
     const [ activeStep, setActiveStep ] = useState(0);
-    const [ currentStep, setCurrenstep ] = useState(0);
+    const [ currentStep, setCurrentStep ] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
 
     const steps = [
@@ -24,7 +24,7 @@ export default function MainTesterComponent(){
 
 
     function getSectionComponent() {
-      switch(activeStep) {
+      switch(currentStep) {
         case 0: return <ScenarioSection scene={scene}/>;
         case 1: return <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>;
         case 2: return <ResultSection assessment={assessment}/>;
@@ -32,9 +32,6 @@ export default function MainTesterComponent(){
       }
     }
     
-    function setActiveStepFunc(activeStep){
-      setActiveStep((oldPreviousStep));
-    }
 
     const stateSetters = {setValue:setScene, setError:setError, setLoading:setLoading};
 
@@ -54,6 +51,12 @@ export default function MainTesterComponent(){
       responseGeminiAndStateSetting(initialPrompt, stateSetters);
     }
 
+    function stepperOnClickChange(e){
+      let updatedStateValue = Number(e.currentTarget.querySelector('span').innerHTML);
+      setCurrentStep(updatedStateValue - 1);
+
+    }
+
     /* show ScenarioSection and InputSection if Gemini responded with an scenario text... */
     if(scene){
       return (
@@ -66,7 +69,12 @@ export default function MainTesterComponent(){
               <h1>Something went wrong. Please try again later</h1>
               :
               <>
-                    <Stepper steps={steps} activeStep={activeStep} onClick={()=>{return 1}}/>{getSectionComponent()}
+                <Stepper activeStep={activeStep}>
+                  <Step label="Read the scenario" completed="true" onClick={stepperOnClickChange}/>
+                  <Step label="Work on your prompt" completed="true" onClick={stepperOnClickChange}/>
+                  <Step label="Get an AI assessment" completed="true" onClick={stepperOnClickChange}/>
+                </Stepper>
+                {getSectionComponent()}
               </>
             }
           </>
