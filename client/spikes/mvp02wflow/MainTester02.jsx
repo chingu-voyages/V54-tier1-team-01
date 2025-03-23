@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ScenarioSection from "./ScenarioSection";
 import InputSection from "./InputSection";
-import ResultSection from "./ResultSection";
 import TypedStringComponent from "./TypedString";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
@@ -10,14 +9,9 @@ export default function MainTesterComponent(){
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [scene, setScene] = useState(null);
-    const [assessment, setAssessment] = useState(null);
     const [selectedOption, setSelectedOption] = useState(null);
 
     const stateSetters = {setValue:setScene, setError:setError, setLoading:setLoading};
-
-   function setAssessmentFunc(value){
-     setAssessment(value);
-   }
 
    function handleSubmitScenarioAbout(e) {
       e.preventDefault();
@@ -44,8 +38,7 @@ export default function MainTesterComponent(){
               :
               <>
                 <ScenarioSection scene={scene}/>
-                <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>
-                <ResultSection assessment={assessment}/>
+                <InputSection scene={scene}/>
               </>
             }
           </>
