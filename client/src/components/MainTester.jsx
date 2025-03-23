@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Stepper } from 'react-form-stepper';
 import ScenarioSection from "./ScenarioSection";
 import InputSection from "./InputSection";
 import ResultSection from "./ResultSection";
@@ -11,7 +12,29 @@ export default function MainTesterComponent(){
     const [error, setError] = useState(false);
     const [scene, setScene] = useState(null);
     const [assessment, setAssessment] = useState(null);
+    const [ activeStep, setActiveStep ] = useState(0);
+    const [ currentStep, setCurrenstep ] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
+
+    const steps = [
+      { label: 'Check the Scenario' },
+      { label: 'Complete your Prompt' },
+      { label: 'Get the AI Assessment' },
+    ];
+
+
+    function getSectionComponent() {
+      switch(activeStep) {
+        case 0: return <ScenarioSection scene={scene}/>;
+        case 1: return <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>;
+        case 2: return <ResultSection assessment={assessment}/>;
+        default: return null;
+      }
+    }
+    
+    function setActiveStepFunc(activeStep){
+      setActiveStep((oldPreviousStep));
+    }
 
     const stateSetters = {setValue:setScene, setError:setError, setLoading:setLoading};
 
@@ -43,9 +66,7 @@ export default function MainTesterComponent(){
               <h1>Something went wrong. Please try again later</h1>
               :
               <>
-                <ScenarioSection scene={scene}/>
-                <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>
-                <ResultSection assessment={assessment}/>
+                    <Stepper steps={steps} activeStep={activeStep} onClick={()=>{return 1}}/>{getSectionComponent()}
               </>
             }
           </>
