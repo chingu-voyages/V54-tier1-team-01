@@ -55,20 +55,23 @@ export default function MainTesterComponent(){
     return (<>
       {loading && <p>Loading...</p>}
       {!loading && !scene &&
-    (<div>
-        <h1>Welcome, prompt engineer!</h1>
-        <p>There is no best way to learn than doing. This is what this app is about! With this app you will be learn by trying to make a Pentagram prompt for an scenario created by the AI agent. You will be asked to create prompts based on the Pentagram framework for that scenario, and the AI will tell you how good your prompt is!</p>
-        <p>It is simple:</p>
-          <ul>
-            <li>Select a topic for the scenario (keep it empty if you want a random one)</li>
-            <li>Once you get the scenario, read it carefully!</li>
-            <li>Suggest some possible prompts for each of the components of the Pentagram framework</li>
-            <li>Submit and get an evaluation for the same AI!</li>
-          </ul>
-        <p>Let's us know what your scenario should be about...</p>
-        <br />
-        <TypedStringComponent />
-        <form method="post" onSubmit={handleSubmitScenarioAbout}>
+    (<div className="grid grid-rows-[50px_minmax(200px,1fr)_100px]">
+        <h1 className="h-20 text-xl md:text-3xl font-bold text-black-300">Welcome, prompt engineer!</h1>
+        <div className="p-10">
+        <p className="text-left">There is no best way to learn than by doing. This is what this app is about! With this app you will learn by making a Pentagram prompt for an scenario created by the AI agent. You will be asked to create prompts based on the Pentagram framework for that scenario, and the AI will tell you how good your prompt was!</p>
+        <p className="text-left">It is simple:</p>
+        <div className="flex justify-center">
+        <ul className="self-center w-185 font-medium text-left text-lg/8 list-disc">
+          <li className="">Suggest a topic for the scenario (keep it empty if you want a random one)</li>
+          <li className="">Once you get the scenario, read it carefully!</li>
+          <li className="">Construct prompts for each of the components of the Pentagram framework</li>
+          <li className="">Submit... and get an evaluation from the AI <span className="italic">self!</span></li>
+        </ul>
+        </div>
+        <p className="p-2 text-lg"><span className="italic">My scenario is about </span><span className="inline-block w-100 h-12 p-2 border rounded"><TypedStringComponent /></span></p>
+        </div>
+        
+        <form className="" method="post" onSubmit={handleSubmitScenarioAbout}>
           <input className='w-small h-12 p-2 border rounded' name="sceneAbout" type="text" />
           <button
           type='submit'
