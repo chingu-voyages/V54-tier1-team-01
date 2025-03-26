@@ -1,6 +1,5 @@
 import { useState } from "react";
 import InputAreaBlock from "./InputAreaBlock";
-import ResultBlock from "./ResultBlock";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
 import DESCRIPTION from "../data/InputDescriptionInfo";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
@@ -10,8 +9,6 @@ import PROMPTS from "../data/geminiPromptDescriptionInfo";
 export default function InputSection(props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  //const [assessment, setAssessment] = useState(null);
-  //const stateSetters = {setValue:setAssessment, setError:setError, setLoading:setLoading};
   const stateSetters = {setValue:props.setAssessmentFunc, setError:setError, setLoading:setLoading};
   
   let forAssessmentPrompt = PROMPTS.onSubmissionPrompt(props.scene); 
@@ -59,4 +56,3 @@ function handleSubmit(event) {
     </>
   );
 }
-// <ResultBlock assessment={assessment}/>

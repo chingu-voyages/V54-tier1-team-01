@@ -1,13 +1,14 @@
 import "./App.css";
 import HeaderComponent from "./components/Header";
-import MainComponent from "./components/Main";
-import MainTesterComponent from "./components/MainTester";
+import MainComponent from "./components/MainComponent";
+import FooterComponent from "./components/Footer";
 
 function App() {
   return (
     <>
       <HeaderComponent />
-      <MainTesterComponent />
+      <MainComponent />
+      <FooterComponent />
     </>
 
   );
