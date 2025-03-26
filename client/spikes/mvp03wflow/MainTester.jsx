@@ -27,7 +27,7 @@ export default function MainTesterComponent(){
       const formJson = Object.fromEntries(formData.entries());
       console.log(formJson);
       let initialPrompt = PROMPTS.onMountScenarioPrompt(formJson['sceneAbout']);
-      console.log(initialPrompt);
+      //console.log(initialPrompt);
       responseGeminiAndStateSetting(initialPrompt, stateSetters);
     }
 
