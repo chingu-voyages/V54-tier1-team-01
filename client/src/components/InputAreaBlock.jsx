@@ -6,7 +6,7 @@ export default function InputAreaBlock({ id, fieldName, fieldText }) {
   return (
     <div className='flex flex-col sm:flex-row items-start gap-3 pb-10'>
       <Input id={id} fieldName={fieldName} fieldText={fieldText} />
-      <Button />
+      <Button inputID={id} />
     </div>
   );
 }
