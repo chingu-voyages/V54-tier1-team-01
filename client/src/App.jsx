@@ -7,7 +7,9 @@ function App() {
   return (
     <>  
       <HeaderComponent />
-      <MainComponent />
+      <main>
+        <MainComponent />
+      </main>
       <FooterComponent />
     </>
 
