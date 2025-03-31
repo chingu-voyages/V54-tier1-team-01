@@ -7,12 +7,8 @@ function App() {
   return (
     <>  
       <HeaderComponent />
-<<<<<<< HEAD
       <MainComponent />
       <FooterComponent />
-=======
-
->>>>>>> a0a577a (spike:mvpwflows: work on about scenario input)
     </>
 
   );
