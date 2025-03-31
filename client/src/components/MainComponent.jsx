@@ -1,15 +1,21 @@
 import { useState, useEffect } from "react";
 import ScenarioSection from "./ScenarioSection";
 import InputSection from "./InputSection";
+import ResultSection from "./ResultSection";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
 
 export default function MainComponent(){
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    let [scene, setScene] = useState(null);
+    const [scene, setScene] = useState(null);
+    const [assessment, setAssessment] = useState(null);
 
     const stateSetters = {setValue:setScene, setError:setError, setLoading:setLoading};
+
+    function setAssessmentFunc(value){
+      setAssessment(value);
+    }
 
     useEffect(()=>{
         //let initialPrompt = "who painted the Mona Lisa";
@@ -31,7 +37,8 @@ export default function MainComponent(){
             :
             <>
               <ScenarioSection scene={scene}/>
-              <InputSection scene={scene}/>
+              <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>
+              <ResultSection assessment={assessment}/>
             </>
           }
         </>
