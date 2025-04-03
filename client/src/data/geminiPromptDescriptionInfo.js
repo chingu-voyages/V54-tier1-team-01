@@ -16,7 +16,7 @@ const PROMPTS = {
         /* basic prompt sent to gemini to assess input prompts */
         return `
                 You have been previously asked to formulate the following task and scenario for a student: ${scene}.
-                Now it is time to evaluate the prompts made by the student. Provide a concise evaluation in markdown format of no more than 3 sentences per component of the Pentagram prompt framework given by the student:
+                Now it is time to evaluate the prompts made by the student. Provide a concise evaluation in markdown format of no more than 3 sentences per component of the Pentagram prompt framework given by the student. This is the prompt provided by the student separated by Pentagram components:
                     `
       },
       addPromptComponent: (prompt, promptCompList, promptCompSource)=>{
@@ -24,6 +24,7 @@ const PROMPTS = {
         for(let i = 0; i < promptCompList.length; i++){
           prompt = prompt +' '+ promptCompList[i] + ': ' + promptCompSource[promptCompList[i]] + '.\n'
         }
+        prompt += '\nAdd a short evaluation of not more than 4 sentences about the use of tokens in the prompt made by the student, and advise how to minimize them.'
         return prompt;
       }
 
