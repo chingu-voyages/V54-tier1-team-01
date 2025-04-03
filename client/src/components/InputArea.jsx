@@ -9,10 +9,13 @@ export default function InputArea({ id, fieldName, fieldText }) {
         {fieldName}:
       </label>
       <textarea
-        className='w-full h-24 p-2 border rounded'
+        className='w-full h-24 p-2 border-2 border-black rounded focus:outline-none focus:border-amber-500'
         id={id}
         placeholder={fieldText}
         name={fieldName}
+        minLength='10'
+        maxLength='150'
+        required
       />
     </>
   );
