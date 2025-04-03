@@ -1,3 +1,4 @@
+import '../style/MainComponent.css';
 import { useState, useEffect } from "react";
 import ScenarioSection from "./ScenarioSection";
 import InputSection from "./InputSection";
@@ -35,11 +36,11 @@ export default function MainComponent(){
             error ?
             <h1>Something went wrong. Please try again later</h1>
             :
-            <>
+            <main className="main">
               <ScenarioSection scene={scene}/>
               <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>
               <ResultSection assessment={assessment}/>
-            </>
+            </main>
           }
         </>
       );

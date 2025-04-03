@@ -35,16 +35,16 @@ function handleEvaluation(event) {
   }
 
   return (
-    <>
-      <h2 className='text-xl md:text-3xl font-bold'>
-        Working on your Pentagram prompt
-      </h2>
+    <div className="formsection">
       <form
         name='prompt-form'
         method='POST'
         onSubmit={handleEvaluation}
         className='p-10 md:p-20'
       >
+      <h2 className='text-xl md:text-3xl font-bold'>
+        Working on your Pentagram prompt
+      </h2>
         {DESCRIPTION.map((item, index) => (
           <InputAreaBlock
             key={index}
@@ -72,6 +72,6 @@ function handleEvaluation(event) {
         </button>
       </form>
      
-    </>
+    </div>
   );
 }
