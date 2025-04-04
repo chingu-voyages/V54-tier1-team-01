@@ -20,12 +20,11 @@ main{
     grid-row: 2;
 }
 
-
 .gemini h1{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    width: 300px;
+    max-width: 300px;
   }
   
   .gemini h2{
@@ -54,4 +53,27 @@ main{
     font-size: 20px;
     text-align: center;
     padding: 10px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    main{
+      display:grid;
+      grid-template-columns: auto;
+      grid-gap: 0;
+    }
+    
+    .scenariosection{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .inputsection{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .resultsection{
+        grid-column: 1;
+        grid-row: 3;
+  }
   }
