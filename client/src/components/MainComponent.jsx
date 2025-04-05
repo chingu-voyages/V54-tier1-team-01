@@ -19,7 +19,7 @@ export default function MainComponent(){
     }
 
     useEffect(()=>{
-        //let initialPrompt = "who painted the Mona Lisa";
+        //let initialPrompt = "who painted the Mona Lisa";//for testing purposes only
         const abouts = [null, 'software development plan', 'urbanization of a sector of a city', 'community work', 'contingency plan against natural disasters', 'education program'];
         const indx =Math.floor(Math.random()*abouts.length);
         let initialPrompt = PROMPTS.onMountScenarioPrompt(abouts[indx]);    
