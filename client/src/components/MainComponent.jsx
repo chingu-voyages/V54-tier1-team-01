@@ -13,9 +13,9 @@ export default function MainComponent(){
     let initialPrompt = PROMPTS.onMountScenarioPrompt();
 
     useEffect(()=>{
-        //let initialPrompt = "who painted the Mona Lisa";
+        //let initialPrompt = "who painted the Mona Lisa";//for testing purposes only
     
-        //responseGeminiAndStateSetting(initialPrompt, stateSetters);
+        responseGeminiAndStateSetting(initialPrompt, stateSetters);
       },
       []);
 
