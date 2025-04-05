@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import InputSection from "./InputSection";
+import ScenarioSection from "./ScenarioSection";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
 
@@ -20,7 +21,8 @@ export default function MainComponent(){
       []);
 
     return (
-        <>
+      <>
+          <ScenarioSection />
           <InputSection scene={scene} />
         </>
       );
