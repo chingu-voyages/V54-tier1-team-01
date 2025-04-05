@@ -27,7 +27,7 @@ Once you've crafted your prompt, submit it to me. I will then provide feedback o
 
 export default function ScenarioSection() {
     return (
-        <section className="scenario-section bg-neutral-100 p-6 rounded-md mb-6">
+        <section className="scenario-section gemini bg-neutral-100 p-6 rounded-md mb-6">
             <ReactMarkdown>{markdownContent}</ReactMarkdown>
         </section>
     );
