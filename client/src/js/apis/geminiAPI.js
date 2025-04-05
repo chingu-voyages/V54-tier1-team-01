@@ -1,5 +1,5 @@
 /* call vertexAI safeguarded by Firebase to protect (limit) the use of the gemini api */
-import { vertexAIModel } from '../../../config/vertexAIConfig';
+import { vertexAIModel } from './vertexAIConfig';
 
 async function generateGeminiContent(prompt) {
 
