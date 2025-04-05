@@ -1,0 +1,21 @@
+.gemini h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .gemini h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+ 
+  .gemini ul, ol{
+    list-style-type: circle;
+    margin-left:50px;
+    padding: 10px;
+  }
+  
+  .gemini ol{
+    list-style-type: lower-alpha;
+  }

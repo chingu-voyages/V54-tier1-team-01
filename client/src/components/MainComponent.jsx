@@ -1,3 +1,4 @@
+import '../style/MainComponent.css';
 import { useState, useEffect } from "react";
 import InputSection from "./InputSection";
 import ScenarioSection from "./ScenarioSection";
