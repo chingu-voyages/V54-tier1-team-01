@@ -10,8 +10,13 @@ export default function MainComponent(){
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     let [scene, setScene] = useState(null);
+    const [assessment, setAssessment] = useState(null);
 
     const stateSetters = {setValue:setScene, setError:setError, setLoading:setLoading};
+
+    function setAssessmentFunc(value){
+      setAssessment(value);
+    }
 
     useEffect(()=>{
         //let initialPrompt = "who painted the Mona Lisa";//for testing purposes only
@@ -33,8 +38,8 @@ export default function MainComponent(){
             :
             <main className="main">
               <ScenarioSection scene={scene}/>
-              <InputSection scene={scene}/>
-              <ResultSection/>
+              <InputSection scene={scene} setAssessmentFunc={setAssessmentFunc}/>
+              <ResultSection assessment={assessment}/>
             </main>
           }
         </>
