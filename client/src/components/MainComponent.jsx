@@ -31,10 +31,14 @@ export default function MainComponent(){
       <>
           {
             loading ?
-            <h1>loading...</h1>
+            <main>
+              <h1>loading...</h1>
+            </main>
             :
             error ?
-            <h1>Something went wrong. Please try again later</h1>
+            <main>
+              <h1>Something went wrong. Please try again later</h1>
+            </main>
             :
             <main className="main">
               <ScenarioSection scene={scene}/>
