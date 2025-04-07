@@ -31,7 +31,7 @@ export default function InputSection(props) {
 
     //convert to JS object for easy extraction
     const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson);
+
 
     //complete prompt with data submitted by user
     forAssessmentPrompt = PROMPTS.updatePromptwithInputData(forAssessmentPrompt, ['Persona', 'Context', 'Task', 'Output', 'Constraints'], formJson);
