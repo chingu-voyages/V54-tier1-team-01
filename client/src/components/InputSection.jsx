@@ -13,7 +13,7 @@ export default function InputSection(props) {
 
   //state setters collection
   const stateSetters = {
-    setValue: setAssessment,
+    setValue: props.setAssessmentFunc,
     setError: setError,
     setLoading: setLoading,
   };
@@ -22,7 +22,7 @@ export default function InputSection(props) {
   let forAssessmentPrompt = PROMPTS.onSubmissionPrompt(props.scene);
 
   /*Form handling function*/
-  const handleSubmit = (event) => {
+  const handleAssessment = (event) => {
     event.preventDefault();
 
     // Read the form data
@@ -31,34 +31,25 @@ export default function InputSection(props) {
 
     //convert to JS object for easy extraction
     const formJson = Object.fromEntries(formData.entries());
+    console.log(formJson);
 
     //complete prompt with data submitted by user
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Persona: " + formJson["Persona"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Context: " + formJson["Context"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Task: " + formJson["Task"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Output: " + formJson["Output"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Constraints: " + formJson["Constraints"] + ".\n";
-
+    forAssessmentPrompt = PROMPTS.updatePromptwithInputData(forAssessmentPrompt, ['Persona', 'Context', 'Task', 'Output', 'Constraints'], formJson);
     // make request to Gemini and set the states
-    //responseGeminiAndStateSetting(prompt, stateSetters)
+    responseGeminiAndStateSetting(forAssessmentPrompt, stateSetters)
   };
 
   return (
-    <>
-      <h2 className='text-xl md:text-3xl font-bold'>
-        Working on your Pentagram prompt
-      </h2>
+    <section>
       <form
         name='prompt-form'
         method='POST'
-        onSubmit={handleSubmit}
+        onSubmit={handleAssessment}
         className='p-10 md:p-20'
       >
+        <h2 className='text-xl md:text-3xl font-bold'>
+          Working on your Pentagram prompt
+        </h2>
         {DESCRIPTION.map((item, index) => (
           <InputAreaBlock
             key={index}
@@ -74,6 +65,6 @@ export default function InputSection(props) {
           Submit
         </button>
       </form>
-    </>
+    </section>
   );
 }

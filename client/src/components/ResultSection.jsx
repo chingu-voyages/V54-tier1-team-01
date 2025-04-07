@@ -27,8 +27,16 @@ Once you've crafted your prompt, submit it to me. I will then provide feedback o
 
 export default function ResultSection(props) {
     return (
-        <section className="result-section gemini bg-neutral-100 p-6 rounded-md mb-6">
-            <ReactMarkdown>{markdownContentTest}</ReactMarkdown>
-        </section>
+        <>
+            {props.assessment?
+                <section className="result-section gemini bg-neutral-100 p-6 rounded-md mb-6">
+                    <ReactMarkdown>{props.assessment}</ReactMarkdown>
+                </section>
+            :
+                <section className='result-section flex items-center justify-center'>
+                    <h1 className="text-xl md:text-3xl font-bold text-red-300">Evaluate or Submit your Prompt!</h1>
+                </section>
+            }
+        </>
     );
 }
