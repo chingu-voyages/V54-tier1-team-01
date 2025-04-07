@@ -1,7 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
-const markdownContent = `
+const markdownContentTest = `
 # Crafting Prompts with the Pentagram Framework
 
 ## Introduction
@@ -25,10 +25,10 @@ Your task is to construct a single, well-structured prompt based on the Pentagra
 Once you've crafted your prompt, submit it to me. I will then provide feedback on its effectiveness based on the Pentagram framework, helping you to refine your prompt engineering skills.
 `;
 
-export default function ScenarioSection() {
+export default function ScenarioSection(props) {
     return (
         <section className="scenario-section gemini bg-neutral-100 p-6 rounded-md mb-6">
-            <ReactMarkdown>{markdownContent}</ReactMarkdown>
+            <ReactMarkdown>{props.scene}</ReactMarkdown>
         </section>
     );
 }

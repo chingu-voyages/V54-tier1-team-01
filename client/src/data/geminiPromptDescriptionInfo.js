@@ -5,7 +5,7 @@ const PROMPTS = {
       1. you provide the scenario and ask to make either one, several or a full prompt for that scenario based on pentagram framework
       2. the user follows your instructions, make the prompt and send that to you
       3. you provide a review, like a teacher, of the quality of the prompt based on the pentagram framework
-      Do the step one mentioned above. Present the result in markdown format with a clear title, a concise introduction of the pentagram framework (no more than 20 words), an scenario section, and a section shortly describing what the student must do and what will happen next. Subtitels of the sections should be always set in (##) markdown.
+      Do the step one mentioned above. Present the result in markdown format titling it "Pentagram Prompting: Learn by Doing solving a AI-Generated Scenario", a concise introduction of the pentagram framework (no more than 20 words), an scenario section, and a section shortly describing what the student must do and what will happen next. Subtitels of the sections should be always set in (##) markdown.
       `},
       onSubmissionPrompt: (scene)=>{
         return `
