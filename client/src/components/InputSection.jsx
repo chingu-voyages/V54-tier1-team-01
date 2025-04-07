@@ -22,7 +22,7 @@ export default function InputSection(props) {
   let forAssessmentPrompt = PROMPTS.onSubmissionPrompt(props.scene);
 
   /*Form handling function*/
-  const handleSubmit = (event) => {
+  const handleAssessment = (event) => {
     event.preventDefault();
 
     // Read the form data
@@ -33,19 +33,9 @@ export default function InputSection(props) {
     const formJson = Object.fromEntries(formData.entries());
 
     //complete prompt with data submitted by user
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Persona: " + formJson["Persona"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Context: " + formJson["Context"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Task: " + formJson["Task"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Output: " + formJson["Output"] + ".\n";
-    forAssessmentPrompt =
-      forAssessmentPrompt + +" Constraints: " + formJson["Constraints"] + ".\n";
-
+    forAssessmentPrompt = PROMPTS.updatePromptwithInputData(forAssessmentPrompt, ['Persona', 'Context', 'Task', 'Output', 'Constraints'], formJson);
     // make request to Gemini and set the states
-    //responseGeminiAndStateSetting(prompt, stateSetters)
+    responseGeminiAndStateSetting(prompt, stateSetters)
   };
 
   return (
@@ -56,7 +46,7 @@ export default function InputSection(props) {
       <form
         name='prompt-form'
         method='POST'
-        onSubmit={handleSubmit}
+        onSubmit={handleAssessment}
         className='p-10 md:p-20'
       >
         {DESCRIPTION.map((item, index) => (
