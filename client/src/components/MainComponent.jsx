@@ -2,6 +2,7 @@ import '../style/MainComponent.css';
 import { useState, useEffect } from "react";
 import InputSection from "./InputSection";
 import ScenarioSection from "./ScenarioSection";
+import ResultSection from "./ResultSection";
 import PROMPTS from "../data/geminiPromptDescriptionInfo";
 import responseGeminiAndStateSetting from "../js/apis/geminiAPI";
 
@@ -33,6 +34,7 @@ export default function MainComponent(){
             <main className="main">
               <ScenarioSection scene={scene}/>
               <InputSection scene={scene}/>
+              <ResultSection/>
             </main>
           }
         </>
