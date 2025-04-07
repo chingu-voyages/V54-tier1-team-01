@@ -12,19 +12,29 @@ export default function MainComponent(){
 
     const stateSetters = {setValue:setScene, setError:setError, setLoading:setLoading};
 
-    let initialPrompt = PROMPTS.onMountScenarioPrompt();
-
     useEffect(()=>{
         //let initialPrompt = "who painted the Mona Lisa";//for testing purposes only
-    
+        const abouts = [null, 'software development plan', 'public health', 'pharmaceutical and drug development', 'logistics', 'urbanization of a sector of a city', 'community work', 'contingency plan against natural disasters', 'education program'];
+        const indx =Math.floor(Math.random()*abouts.length);
+        let initialPrompt = PROMPTS.onMountScenarioPrompt(abouts[indx]);
         responseGeminiAndStateSetting(initialPrompt, stateSetters);
       },
       []);
 
     return (
       <>
-          <ScenarioSection />
-          <InputSection scene={scene} />
+          {
+            loading ?
+            <h1>loading...</h1>
+            :
+            error ?
+            <h1>Something went wrong. Please try again later</h1>
+            :
+            <main className="main">
+              <ScenarioSection scene={scene}/>
+              <InputSection scene={scene}/>
+            </main>
+          }
         </>
       );
 }
