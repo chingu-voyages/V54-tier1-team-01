@@ -28,7 +28,12 @@ Once you've crafted your prompt, submit it to me. I will then provide feedback o
 export default function ScenarioSection(props) {
     return (
         <section className="scenario-section gemini bg-neutral-100 p-6 rounded-md mb-6">
+            <h1>Pentagram Prompting: Learn by Doing through solving an AI-Generated Scenario</h1>
+            <h2>Pentagram Framework: 5-part structure for precise instructions</h2>
+            <p>The pentagram framework is a powerful tool for crafting effective AI prompts. It helps you specify: Persona, Task, Context, Output Format, and Constraints.</p>
             <ReactMarkdown>{props.scene}</ReactMarkdown>
+            <p><strong>Once you've formulated your prompt, submit it to me. I will then analyze it and provide feedback based on the pentagram framework and the number of <i>tokens</i> used to make it.</strong></p>
+            <p>This will help you understand how to effectively use the pentagram framework for prompt engineering, giving you the confidence to design clearer, more specific prompts for various AI tools!</p>
         </section>
     );
 }
