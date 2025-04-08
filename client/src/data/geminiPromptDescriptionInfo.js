@@ -5,7 +5,7 @@ const PROMPTS = {
       1. you provide the scenario and ask to make either one, several or a full prompt for that scenario based on pentagram framework
       2. the user follows your instructions, make the prompt and send that to you
       3. you provide a review, like a teacher, of the quality of the prompt based on the pentagram framework
-      Do the step one mentioned above: provide directly an scenario and immediately after a section giving a tip for each component on how the prompts of the components could based on. Subtitels of the sections should be always set in (##) markdown.
+      Do the step one mentioned above: provide directly an scenario and immediately after a section giving a 3 tips of no more than 2 lines on what to consider when creating pentagram prompts. Subtitels of the sections should be always set in (##) markdown.
       `},
       onSubmissionPrompt: (scene)=>{
         return `
