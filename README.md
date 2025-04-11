@@ -33,6 +33,8 @@ Our Mission is...
 
 # Our App
 
+ACTUAL WORKING URL (April 2025): https://geminisecuritychingu54-1-1-a.web.app/
+
 Our project resulted in a simple **sandbox** or **playground** for aspiring prompt engineers, particularly those looking to master the Pentagram framework.
 
 In our app, GeminiAI generates random, simulated scenarios, challenging users to craft optimal Pentagram prompts. The user assumes the role of a *student*.
