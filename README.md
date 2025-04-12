@@ -44,7 +44,7 @@ Users complete a form with each Pentagram prompt component, adhering to validati
 
 ![Image](https://github.com/user-attachments/assets/8bf2db53-9fa4-4556-8772-cdcc1ea80332)
 
-Upon submission, GeminiAI evaluates the *effectiveness* of each **prompt component** (persona, task, context, output, and constraints) and provides feedback on **token usage**. This token information is included because token consumption directly impacts *costs* in generative chat APIs, thereby helping users develop **cost-effective** Pentagram prompts.
+Upon submission, GeminiAI evaluates the *effectiveness* of each **prompt component** (persona, task, context, output, and constraints) for *the generated scenario* and provides feedback on **token usage**. This token information is included because token consumption directly impacts *costs* in generative chat APIs, thereby helping users develop **cost-effective** Pentagram prompts.
 
 ![Image](https://github.com/user-attachments/assets/20093bdb-c2ec-467c-9e4f-542534eb9f10)
 
