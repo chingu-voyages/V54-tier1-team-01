@@ -1,4 +1,3 @@
-
 # The Problem: An AIHelper for making good Pentagram Prompts
 
 From the requirements, we understood that...
