@@ -33,7 +33,7 @@ Our Mission is...
 
 # Our App
 
-ACTUAL WORKING URL (April 2025): https://geminisecuritychingu54-1-1-a.web.app/
+ALTERNATIVE URL (April 2025): https://geminisecuritychingu54-1-1-a.web.app/
 
 Our project resulted in a simple **sandbox** or **playground** for aspiring prompt engineers, particularly those looking to master the Pentagram framework.
 
