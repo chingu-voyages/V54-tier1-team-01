@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+/* Custom settings */
+@theme {
+  --brand-color: #f37d0d;
+  --primary-color: #a2bac7;
+  --primary-dark-color: #182f3f;
+  --secondary-color: #ffffff;
+}
 /*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
