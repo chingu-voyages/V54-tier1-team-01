@@ -14,9 +14,11 @@ export default function HeroSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
             condimentum purus. Fusce facilisis sapien nec purus porta
           </p>
-          <button className='px-10 py-2 bg-(--brand-color) rounded-4xl font-bold text-(--secondary-color)'>
-            Create prompt
-          </button>
+          <div className='animate-rotate-border rounded-4xl hover:bg-conic/[from_var(--border-angle)] from-(--secondary-color) via-(--brand-color) to-(--secondary-color) from-80% via-80% to-100%  p-px'>
+            <button className='px-10 py-2 bg-(--brand-color) rounded-4xl font-bold text-(--secondary-color) cursor-pointer transition-all duration-700 hover:bg-neutral-100 hover:text-(--primary-color)'>
+              Create prompt
+            </button>
+          </div>
         </div>
       </div>
       <img
